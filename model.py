@@ -29,14 +29,14 @@ class Product(Base):
     # Define a one-to-many relationship with Sales
     sales = relationship('Sale', back_populates='product')
     
-#     # Define a one-to-one relationship with Inventory
-#     inventory = relationship('Inventory', uselist=False, back_populates='product')
+    # Define a one-to-one relationship with Inventory
+    inventory = relationship('Inventory', uselist=False, back_populates='product')
 
-#     # Define a one-to-many relationship with InventoryAlert
-#     inventory_alerts = relationship("InventoryAlert", back_populates="product")
+    # Define a one-to-many relationship with InventoryAlert
+    inventory_alerts = relationship("InventoryAlert", back_populates="product")
 
-#       # Define a one-to-many relationship with OrderDetail
-#     order_details = relationship('OrderDetail', back_populates='product')
+      # Define a one-to-many relationship with OrderDetail
+    order_details = relationship('OrderDetail', back_populates='product')
 
 
 
