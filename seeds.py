@@ -12,9 +12,9 @@ engine = create_engine(DATABASE_URL)
 # Create the tables in the database.
 Base.metadata.create_all(engine)
 
-# # Create a session to interact with the database
-# Session = sessionmaker(bind=engine)
-# session = Session()
+# Create a session to interact with the database
+Session = sessionmaker(bind=engine)
+session = Session()
 
 # def seed_data():
 #     # Seed Customers
