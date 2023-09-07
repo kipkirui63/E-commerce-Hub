@@ -52,12 +52,12 @@ class Sale(Base):
     quantity_sold = Column(Integer)
     unit_price = Column(DECIMAL)
     
-#     # Define many-to-one relationships with Customer and Product
-#     customer = relationship('Customer', back_populates='sales')
-#     product = relationship('Product', back_populates='sales')
+    # Define many-to-one relationships with Customer and Product
+    customer = relationship('Customer', back_populates='sales')
+    product = relationship('Product', back_populates='sales')
 
-#     # Define a one-to-many relationship with OrderDetail
-#     order_details = relationship('OrderDetail', back_populates='sale')
+    # Define a one-to-many relationship with OrderDetail
+    order_details = relationship('OrderDetail', back_populates='sale')
 
 # # Define the Inventory model
 # class Inventory(Base):
