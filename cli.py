@@ -72,13 +72,13 @@ def generate_table_cli(table, table_name, fields):
 
     return add_item, delete_item, update_item, list_items
 
-# customer_cli = generate_table_cli(Customer, "Customer", ["customer_name", "email", "phone_number"])
-# product_cli = generate_table_cli(Product, "Product", ["product_name", "description", "price"])
-# sale_cli = generate_table_cli(Sale, "Sale", ["customer_id", "product_id", "order_date", "quantity_sold", "unit_price"])
-# inventory_cli = generate_table_cli(Inventory, "Inventory", ["product_id", "quantity_in_stock"])
-# inventory_alert_cli = generate_table_cli(InventoryAlert, "InventoryAlert", ["product_id", "alert_date", "threshold_quantity", "current_quantity"])
-# user_cli = generate_table_cli(User, "User", ["username", "password_hash", "role"])
-# order_detail_cli = generate_table_cli(OrderDetail, "OrderDetail", ["order_id", "product_id", "quantity", "subtotal"])
+customer_cli = generate_table_cli(Customer, "Customer", ["customer_name", "email", "phone_number"])
+product_cli = generate_table_cli(Product, "Product", ["product_name", "description", "price"])
+sale_cli = generate_table_cli(Sale, "Sale", ["customer_id", "product_id", "order_date", "quantity_sold", "unit_price"])
+inventory_cli = generate_table_cli(Inventory, "Inventory", ["product_id", "quantity_in_stock"])
+inventory_alert_cli = generate_table_cli(InventoryAlert, "InventoryAlert", ["product_id", "alert_date", "threshold_quantity", "current_quantity"])
+user_cli = generate_table_cli(User, "User", ["username", "password_hash", "role"])
+order_detail_cli = generate_table_cli(OrderDetail, "OrderDetail", ["order_id", "product_id", "quantity", "subtotal"])
 
 # if __name__ == "__main__":
 #     for command in customer_cli:
