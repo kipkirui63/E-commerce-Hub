@@ -59,18 +59,18 @@ def generate_table_cli(table, table_name, fields):
         else:
             click.echo(f"{table_name} with ID {id} not found.")
 
-#     @click.command(name=f"list-{table_name.lower()}s")
-#     def list_items():
-#         items = session.query(table).all()
-#         if items:
-#             click.echo(f"List of {table_name}s:")
-#             for item in items:
-#                 item_data = ", ".join([f"{field.capitalize()}: {getattr(item, field)}" for field in fields])
-#                 click.echo(item_data)
-#         else:
-#             click.echo(f"No {table_name.lower()}s found.")
+    @click.command(name=f"list-{table_name.lower()}s")
+    def list_items():
+        items = session.query(table).all()
+        if items:
+            click.echo(f"List of {table_name}s:")
+            for item in items:
+                item_data = ", ".join([f"{field.capitalize()}: {getattr(item, field)}" for field in fields])
+                click.echo(item_data)
+        else:
+            click.echo(f"No {table_name.lower()}s found.")
 
-#     return add_item, delete_item, update_item, list_items
+    return add_item, delete_item, update_item, list_items
 
 # customer_cli = generate_table_cli(Customer, "Customer", ["customer_name", "email", "phone_number"])
 # product_cli = generate_table_cli(Product, "Product", ["product_name", "description", "price"])
