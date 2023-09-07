@@ -49,5 +49,5 @@ def seed_data():
     session.add_all([customer1, customer2, product1, product2, sale1, sale2, inventory1, inventory2, alert1, alert2, user1, user2, order_detail1, order_detail2])
     session.commit()
 
-# if __name__ == "__main__":
-#     seed_data()
+if __name__ == "__main__":
+    seed_data()
