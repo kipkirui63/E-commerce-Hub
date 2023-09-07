@@ -1,7 +1,7 @@
-# from sqlalchemy import create_engine
-# from sqlalchemy.orm import sessionmaker
-# from model import Base, Customer, Product, Sale, Inventory, InventoryAlert, User, OrderDetail
-# from datetime import date
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from model import Base, Customer, Product, Sale, Inventory, InventoryAlert, User, OrderDetail
+from datetime import date
 
 # # Replace 'sqlite:///your_database.db' with your database connection URL
 # DATABASE_URL = 'sqlite:///analytics.db'
