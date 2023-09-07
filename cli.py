@@ -17,20 +17,20 @@ session = Session()
 def cli():
     pass
 
-# def generate_table_cli(table, table_name, fields):
-#     @click.command(name=f"add-{table_name.lower()}")
-#     def add_item():
-#         try:
-#             item_data = {}
-#             for field in fields:
-#                 item_data[field] = click.prompt(f"{field.capitalize()}", type=str)
-#             new_item = table(**item_data)
-#             session.add(new_item)
-#             session.commit()
-#             click.echo(f"Added {table_name}: {new_item}")
-#         except Exception as e:
-#             session.rollback()
-#             click.echo(f"Error: {str(e)}")
+def generate_table_cli(table, table_name, fields):
+    @click.command(name=f"add-{table_name.lower()}")
+    def add_item():
+        try:
+            item_data = {}
+            for field in fields:
+                item_data[field] = click.prompt(f"{field.capitalize()}", type=str)
+            new_item = table(**item_data)
+            session.add(new_item)
+            session.commit()
+            click.echo(f"Added {table_name}: {new_item}")
+        except Exception as e:
+            session.rollback()
+            click.echo(f"Error: {str(e)}")
 
 #     @click.command(name=f"delete-{table_name.lower()}")
 #     @click.option("--id", prompt=f"Enter {table_name} ID to delete", type=int, help=f"{table_name} ID to delete")
