@@ -66,8 +66,8 @@ class Inventory(Base):
     product_id = Column(Integer, ForeignKey('products.product_id'), primary_key=True)
     quantity_in_stock = Column(Integer)
     
-#     # Define a one-to-one relationship with Product
-#     product = relationship('Product', back_populates='inventory')
+    # Define a one-to-one relationship with Product
+    product = relationship('Product', back_populates='inventory')
 
 # # Define the InventoryAlert model (optional)
 # class InventoryAlert(Base):
