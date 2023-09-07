@@ -29,9 +29,9 @@ def seed_data():
     sale1 = Sale(customer=customer1, product=product1, order_date=date(2023, 1, 15), quantity_sold=3, unit_price=19.99)
     sale2 = Sale(customer=customer2, product=product2, order_date=date(2023, 1, 20), quantity_sold=2, unit_price=29.99)
 
-#     # Seed Inventory
-#     inventory1 = Inventory(product=product1, quantity_in_stock=50)
-#     inventory2 = Inventory(product=product2, quantity_in_stock=30)
+    # Seed Inventory
+    inventory1 = Inventory(product=product1, quantity_in_stock=50)
+    inventory2 = Inventory(product=product2, quantity_in_stock=30)
 
 #     # Seed Inventory Alerts (optional)
 #     alert1 = InventoryAlert(product=product1, alert_date=date(2023, 1, 10), threshold_quantity=10, current_quantity=5)
