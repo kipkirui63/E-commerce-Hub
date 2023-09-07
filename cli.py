@@ -81,19 +81,19 @@ user_cli = generate_table_cli(User, "User", ["username", "password_hash", "role"
 order_detail_cli = generate_table_cli(OrderDetail, "OrderDetail", ["order_id", "product_id", "quantity", "subtotal"])
 
 if __name__ == "__main__":
-    # for command in customer_cli:
-    #     cli.add_command(command)
-    # for command in product_cli:
-    #     cli.add_command(command)
-    # for command in sale_cli:
-    #     cli.add_command(command)
-    # for command in inventory_cli:
-    #     cli.add_command(command)
-    # for command in inventory_alert_cli:
-    #     cli.add_command(command)
-    # for command in user_cli:
-    #     cli.add_command(command)
-    # for command in order_detail_cli:
-    #     cli.add_command(command)
+    for command in customer_cli:
+        cli.add_command(command)
+    for command in product_cli:
+        cli.add_command(command)
+    for command in sale_cli:
+        cli.add_command(command)
+    for command in inventory_cli:
+        cli.add_command(command)
+    for command in inventory_alert_cli:
+        cli.add_command(command)
+    for command in user_cli:
+        cli.add_command(command)
+    for command in order_detail_cli:
+        cli.add_command(command)
 
-    # cli()
+    cli()
