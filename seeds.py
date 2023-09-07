@@ -6,11 +6,11 @@ from datetime import date
 # database connection URL
 DATABASE_URL = 'sqlite:///analytics.db'
 
-# # Create the database engine
-# engine = create_engine(DATABASE_URL)
+# Create the database engine
+engine = create_engine(DATABASE_URL)
 
-# # Create the tables in the database.
-# Base.metadata.create_all(engine)
+# Create the tables in the database.
+Base.metadata.create_all(engine)
 
 # # Create a session to interact with the database
 # Session = sessionmaker(bind=engine)
