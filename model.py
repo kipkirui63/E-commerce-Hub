@@ -41,16 +41,16 @@ class Product(Base):
 
 
 
-# # Define the Sale model
-# class Sale(Base):
-#     __tablename__ = 'sales'
+# Define the Sale model
+class Sale(Base):
+    __tablename__ = 'sales'
     
-#     order_id = Column(Integer, primary_key=True)
-#     customer_id = Column(Integer, ForeignKey('customers.customer_id'))
-#     product_id = Column(Integer, ForeignKey('products.product_id'))
-#     order_date = Column(Date)
-#     quantity_sold = Column(Integer)
-#     unit_price = Column(DECIMAL)
+    order_id = Column(Integer, primary_key=True)
+    customer_id = Column(Integer, ForeignKey('customers.customer_id'))
+    product_id = Column(Integer, ForeignKey('products.product_id'))
+    order_date = Column(Date)
+    quantity_sold = Column(Integer)
+    unit_price = Column(DECIMAL)
     
 #     # Define many-to-one relationships with Customer and Product
 #     customer = relationship('Customer', back_populates='sales')
