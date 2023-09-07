@@ -1,0 +1,102 @@
+# E-commerce on CLI
+
+Brief description of your project.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Commands](#commands)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+1. Clone this repository to your local machine.
+   ```bash
+   git clone https://github.com/yourusername/yourproject.git
+   ```
+
+2. Navigate to the project directory.
+   ```bash
+   cd yourproject
+   ```
+
+3. Create a virtual environment (optional but recommended).
+   ```bash
+   python -m venv venv
+   ```
+
+4. Activate the virtual environment.
+   ```bash
+   source venv/bin/activate
+   ```
+
+5. Install the project dependencies.
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Explain how to use your project. Include any setup or configuration required before using the application.
+
+## Commands
+
+Here are the available commands for your application:
+
+- `add-customer`: Add a new customer.
+- `add-product`: Add a new product.
+- `add-sale`: Add a new sale.
+- `add-inventory`: Add a new inventory entry.
+- `add-inventoryalert`: Add a new inventory alert.
+- `add-user`: Add a new user.
+- `add-orderdetail`: Add a new order detail.
+
+- `delete-customer`: Delete a customer.
+- `delete-product`: Delete a product.
+- `delete-sale`: Delete a sale.
+- `delete-inventory`: Delete an inventory entry.
+- `delete-inventoryalert`: Delete an inventory alert.
+- `delete-user`: Delete a user.
+- `delete-orderdetail`: Delete an order detail.
+
+- `update-customer`: Update customer information.
+- `update-product`: Update product information.
+- `update-sale`: Update sale information.
+- `update-inventory`: Update inventory information.
+- `update-inventoryalert`: Update inventory alert information.
+- `update-user`: Update user information.
+- `update-orderdetail`: Update order detail information.
+
+- `list-customers`: List all customers.
+- `list-products`: List all products.
+- `list-sales`: List all sales.
+- `list-inventorys`: List all inventory entries.
+- `list-inventoryalerts`: List all inventory alerts.
+- `list-users`: List all users.
+- `list-orderdetails`: List all order details.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these guidelines:
+
+1. Fork the repository on GitHub.
+2. Clone your forked repository to your local machine.
+3. Create a new branch for your feature or bug fix.
+4. Make your changes and commit them with descriptive messages.
+5. Push your changes to your forked repository.
+6. Create a pull request to the original repository, explaining your changes.
+
+## License
+
+This project is licensed under the [License Name Here] License - see the [LICENSE.md](LICENSE.md) file for details.
+Contributions are welcome! If you find any issues or improvements, feel free to create a pull request.
+
+You can reach me on : Email: enocksang8356@@gmail.com Mattermost: @kipkirui Enock Linkedin: @enock-sang License This project is licensed under the MIT License.
+
+Copyright (c) [2023] [Kipkirui Enock]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
