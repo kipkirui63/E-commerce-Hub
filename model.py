@@ -69,15 +69,15 @@ class Inventory(Base):
     # Define a one-to-one relationship with Product
     product = relationship('Product', back_populates='inventory')
 
-# # Define the InventoryAlert model (optional)
-# class InventoryAlert(Base):
-#     __tablename__ = 'inventory_alerts'
+# Define the InventoryAlert model (optional)
+class InventoryAlert(Base):
+    __tablename__ = 'inventory_alerts'
     
-#     alert_id = Column(Integer, primary_key=True)
-#     product_id = Column(Integer, ForeignKey('products.product_id'))
-#     alert_date = Column(Date)
-#     threshold_quantity = Column(Integer)
-#     current_quantity = Column(Integer)
+    alert_id = Column(Integer, primary_key=True)
+    product_id = Column(Integer, ForeignKey('products.product_id'))
+    alert_date = Column(Date)
+    threshold_quantity = Column(Integer)
+    current_quantity = Column(Integer)
     
 #     # Define a many-to-one relationship with Product
 #     product = relationship('Product', back_populates='inventory_alerts')
