@@ -16,10 +16,10 @@ Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# def seed_data():
-#     # Seed Customers
-#     customer1 = Customer(customer_name="Alexis", email="macalister@example.com", phone_number="123-456-7890")
-#     customer2 = Customer(customer_name="Sczobozlai", email="sczobozlai@example.com", phone_number="987-654-3210")
+def seed_data():
+    # Seed Customers
+    customer1 = Customer(customer_name="Alexis", email="macalister@example.com", phone_number="123-456-7890")
+    customer2 = Customer(customer_name="Sczobozlai", email="sczobozlai@example.com", phone_number="987-654-3210")
 
 #     # Seed Products
 #     product1 = Product(product_name="Milk", description="Perishable", price=19.99)
