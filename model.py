@@ -79,8 +79,8 @@ class InventoryAlert(Base):
     threshold_quantity = Column(Integer)
     current_quantity = Column(Integer)
     
-#     # Define a many-to-one relationship with Product
-#     product = relationship('Product', back_populates='inventory_alerts')
+    # Define a many-to-one relationship with Product
+    product = relationship('Product', back_populates='inventory_alerts')
 
 # # Optional: Define the User model (if implementing user authentication)
 # class User(Base):
