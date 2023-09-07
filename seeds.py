@@ -21,9 +21,9 @@ def seed_data():
     customer1 = Customer(customer_name="Alexis", email="macalister@example.com", phone_number="123-456-7890")
     customer2 = Customer(customer_name="Sczobozlai", email="sczobozlai@example.com", phone_number="987-654-3210")
 
-#     # Seed Products
-#     product1 = Product(product_name="Milk", description="Perishable", price=19.99)
-#     product2 = Product(product_name="Gasoline", description="Non Perishable", price=29.99)
+    # Seed Products
+    product1 = Product(product_name="Milk", description="Perishable", price=19.99)
+    product2 = Product(product_name="Gasoline", description="Non Perishable", price=29.99)
 
 #     # Seed Sales
 #     sale1 = Sale(customer=customer1, product=product1, order_date=date(2023, 1, 15), quantity_sold=3, unit_price=19.99)
