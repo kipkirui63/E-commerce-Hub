@@ -82,14 +82,14 @@ class InventoryAlert(Base):
     # Define a many-to-one relationship with Product
     product = relationship('Product', back_populates='inventory_alerts')
 
-# # Optional: Define the User model (if implementing user authentication)
-# class User(Base):
-#     __tablename__ = 'users'
+# Optional: Define the User model 
+class User(Base):
+    __tablename__ = 'users'
     
-#     user_id = Column(Integer, primary_key=True)
-#     username = Column(String)
-#     password_hash = Column(String)
-#     role = Column(String)
+    user_id = Column(Integer, primary_key=True)
+    username = Column(String)
+    password_hash = Column(String)
+    role = Column(String)
 
 # # Optional: Define the OrderDetail model 
 # class OrderDetail(Base):
