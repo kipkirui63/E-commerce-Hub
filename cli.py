@@ -96,4 +96,4 @@ if __name__ == "__main__":
     for command in order_detail_cli:
         cli.add_command(command)
 
-    cli()
+    # cli()
