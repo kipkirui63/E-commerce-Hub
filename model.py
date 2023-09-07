@@ -91,15 +91,15 @@ class User(Base):
     password_hash = Column(String)
     role = Column(String)
 
-# # Optional: Define the OrderDetail model 
-# class OrderDetail(Base):
-#     __tablename__ = 'order_details'
+# Optional: Define the OrderDetail model 
+class OrderDetail(Base):
+    __tablename__ = 'order_details'
     
-#     order_detail_id = Column(Integer, primary_key=True)
-#     order_id = Column(Integer, ForeignKey('sales.order_id'))
-#     product_id = Column(Integer, ForeignKey('products.product_id'))
-#     quantity = Column(Integer)
-#     subtotal = Column(DECIMAL)
+    order_detail_id = Column(Integer, primary_key=True)
+    order_id = Column(Integer, ForeignKey('sales.order_id'))
+    product_id = Column(Integer, ForeignKey('products.product_id'))
+    quantity = Column(Integer)
+    subtotal = Column(DECIMAL)
     
 #     # Define many-to-one relationships with Sale and Product
 #     sale = relationship('Sale', back_populates='order_details')
