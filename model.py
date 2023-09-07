@@ -59,12 +59,12 @@ class Sale(Base):
     # Define a one-to-many relationship with OrderDetail
     order_details = relationship('OrderDetail', back_populates='sale')
 
-# # Define the Inventory model
-# class Inventory(Base):
-#     __tablename__ = 'inventory'
+# Define the Inventory model
+class Inventory(Base):
+    __tablename__ = 'inventory'
     
-#     product_id = Column(Integer, ForeignKey('products.product_id'), primary_key=True)
-#     quantity_in_stock = Column(Integer)
+    product_id = Column(Integer, ForeignKey('products.product_id'), primary_key=True)
+    quantity_in_stock = Column(Integer)
     
 #     # Define a one-to-one relationship with Product
 #     product = relationship('Product', back_populates='inventory')
