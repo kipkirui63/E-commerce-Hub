@@ -13,9 +13,9 @@ engine = create_engine(DATABASE_URL)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# @click.group()
-# def cli():
-#     pass
+@click.group()
+def cli():
+    pass
 
 # def generate_table_cli(table, table_name, fields):
 #     @click.command(name=f"add-{table_name.lower()}")
