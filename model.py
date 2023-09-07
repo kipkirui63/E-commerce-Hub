@@ -26,8 +26,8 @@ class Product(Base):
     description = Column(String)
     price = Column(DECIMAL)
     
-#     # Define a one-to-many relationship with Sales
-#     sales = relationship('Sale', back_populates='product')
+    # Define a one-to-many relationship with Sales
+    sales = relationship('Sale', back_populates='product')
     
 #     # Define a one-to-one relationship with Inventory
 #     inventory = relationship('Inventory', uselist=False, back_populates='product')
