@@ -17,14 +17,14 @@ class Customer(Base):
     # Define a one-to-many relationship with Sales
     sales = relationship('Sale', back_populates='customer')
 
-# Define the Product model
-# class Product(Base):
-#     __tablename__ = 'products'
+Define the Product model
+class Product(Base):
+    __tablename__ = 'products'
     
-#     product_id = Column(Integer, primary_key=True)
-#     product_name = Column(String)
-#     description = Column(String)
-#     price = Column(DECIMAL)
+    product_id = Column(Integer, primary_key=True)
+    product_name = Column(String)
+    description = Column(String)
+    price = Column(DECIMAL)
     
 #     # Define a one-to-many relationship with Sales
 #     sales = relationship('Sale', back_populates='product')
