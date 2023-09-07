@@ -43,21 +43,21 @@ def generate_table_cli(table, table_name, fields):
         else:
             click.echo(f"{table_name} with ID {id} not found.")
 
-#     @click.command(name=f"update-{table_name.lower()}")
-#     @click.option("--id", prompt=f"Enter {table_name} ID to update", type=int, help=f"{table_name} ID to update")
-#     def update_item(id):
-#         item = session.query(table).filter(getattr(table, f"{table_name.lower()}_id") == id).first()
-#         if item:
-#             update_data = {}
-#             for field in fields:
-#                 new_value = click.prompt(f"New {field.capitalize()}", default=getattr(item, field))
-#                 update_data[field] = new_value
-#             for field, value in update_data.items():
-#                 setattr(item, field, value)
-#             session.commit()
-#             click.echo(f"Updated {table_name} with ID {id}")
-#         else:
-#             click.echo(f"{table_name} with ID {id} not found.")
+    @click.command(name=f"update-{table_name.lower()}")
+    @click.option("--id", prompt=f"Enter {table_name} ID to update", type=int, help=f"{table_name} ID to update")
+    def update_item(id):
+        item = session.query(table).filter(getattr(table, f"{table_name.lower()}_id") == id).first()
+        if item:
+            update_data = {}
+            for field in fields:
+                new_value = click.prompt(f"New {field.capitalize()}", default=getattr(item, field))
+                update_data[field] = new_value
+            for field, value in update_data.items():
+                setattr(item, field, value)
+            session.commit()
+            click.echo(f"Updated {table_name} with ID {id}")
+        else:
+            click.echo(f"{table_name} with ID {id} not found.")
 
 #     @click.command(name=f"list-{table_name.lower()}s")
 #     def list_items():
