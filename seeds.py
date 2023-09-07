@@ -33,9 +33,9 @@ def seed_data():
     inventory1 = Inventory(product=product1, quantity_in_stock=50)
     inventory2 = Inventory(product=product2, quantity_in_stock=30)
 
-#     # Seed Inventory Alerts (optional)
-#     alert1 = InventoryAlert(product=product1, alert_date=date(2023, 1, 10), threshold_quantity=10, current_quantity=5)
-#     alert2 = InventoryAlert(product=product2, alert_date=date(2023, 1, 12), threshold_quantity=15, current_quantity=8)
+    # Seed Inventory Alerts (optional)
+    alert1 = InventoryAlert(product=product1, alert_date=date(2023, 1, 10), threshold_quantity=10, current_quantity=5)
+    alert2 = InventoryAlert(product=product2, alert_date=date(2023, 1, 12), threshold_quantity=15, current_quantity=8)
 
 #     # Seed Users (optional for authentication)
 #     user1 = User(username="admin", password_hash="admin@254", role="admin")
