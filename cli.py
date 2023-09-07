@@ -32,16 +32,16 @@ def generate_table_cli(table, table_name, fields):
             session.rollback()
             click.echo(f"Error: {str(e)}")
 
-#     @click.command(name=f"delete-{table_name.lower()}")
-#     @click.option("--id", prompt=f"Enter {table_name} ID to delete", type=int, help=f"{table_name} ID to delete")
-#     def delete_item(id):
-#         item = session.query(table).filter(getattr(table, f"{table_name.lower()}_id") == id).first()
-#         if item:
-#             session.delete(item)
-#             session.commit()
-#             click.echo(f"Deleted {table_name} with ID {id}")
-#         else:
-#             click.echo(f"{table_name} with ID {id} not found.")
+    @click.command(name=f"delete-{table_name.lower()}")
+    @click.option("--id", prompt=f"Enter {table_name} ID to delete", type=int, help=f"{table_name} ID to delete")
+    def delete_item(id):
+        item = session.query(table).filter(getattr(table, f"{table_name.lower()}_id") == id).first()
+        if item:
+            session.delete(item)
+            session.commit()
+            click.echo(f"Deleted {table_name} with ID {id}")
+        else:
+            click.echo(f"{table_name} with ID {id} not found.")
 
 #     @click.command(name=f"update-{table_name.lower()}")
 #     @click.option("--id", prompt=f"Enter {table_name} ID to update", type=int, help=f"{table_name} ID to update")
