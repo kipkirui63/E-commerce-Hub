@@ -7,11 +7,11 @@ from model import Base, Customer, Product, Sale, Inventory, InventoryAlert, User
 # Define the base class for declarative models
 Base = declarative_base()
 
-# # Set up the database connection
-# DATABASE_URL = "sqlite:///analytics.db"
-# engine = create_engine(DATABASE_URL)
-# Session = sessionmaker(bind=engine)
-# session = Session()
+# Set up the database connection
+DATABASE_URL = "sqlite:///analytics.db"
+engine = create_engine(DATABASE_URL)
+Session = sessionmaker(bind=engine)
+session = Session()
 
 # @click.group()
 # def cli():
