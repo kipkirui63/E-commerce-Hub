@@ -105,6 +105,6 @@ class OrderDetail(Base):
     sale = relationship('Sale', back_populates='order_details')
     product = relationship('Product', back_populates='order_details')
 
-#      # Define many-to-one relationship with Product
-#     product_id = Column(Integer, ForeignKey('products.product_id'))
-#     product = relationship('Product', back_populates='order_details')
+     # Define many-to-one relationship with Product
+    product_id = Column(Integer, ForeignKey('products.product_id'))
+    product = relationship('Product', back_populates='order_details')
