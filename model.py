@@ -82,7 +82,7 @@ class InventoryAlert(Base):
     # Define a many-to-one relationship with Product
     product = relationship('Product', back_populates='inventory_alerts')
 
-# Optional: Define the User model 
+#  Define the User model 
 class User(Base):
     __tablename__ = 'users'
     
@@ -91,7 +91,7 @@ class User(Base):
     password_hash = Column(String)
     role = Column(String)
 
-# Optional: Define the OrderDetail model 
+#  Define the OrderDetail model 
 class OrderDetail(Base):
     __tablename__ = 'order_details'
     
@@ -101,9 +101,9 @@ class OrderDetail(Base):
     quantity = Column(Integer)
     subtotal = Column(DECIMAL)
     
-#     # Define many-to-one relationships with Sale and Product
-#     sale = relationship('Sale', back_populates='order_details')
-#     product = relationship('Product', back_populates='order_details')
+    # Define many-to-one relationships with Sale and Product
+    sale = relationship('Sale', back_populates='order_details')
+    product = relationship('Product', back_populates='order_details')
 
 #      # Define many-to-one relationship with Product
 #     product_id = Column(Integer, ForeignKey('products.product_id'))
