@@ -17,7 +17,7 @@ class Customer(Base):
     # Define a one-to-many relationship with Sales
     sales = relationship('Sale', back_populates='customer')
 
-Define the Product model
+#Define the Product model
 class Product(Base):
     __tablename__ = 'products'
     
