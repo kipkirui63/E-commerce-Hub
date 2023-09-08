@@ -1,4 +1,5 @@
 import click
+import matplotlib.pyplot as plt
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -71,6 +72,28 @@ def generate_table_cli(table, table_name, fields):
             click.echo(f"No {table_name.lower()}s found.")
 
     return add_item, delete_item, update_item, list_items
+
+
+@click.command(name="display-sales-chart")
+def display_sales_chart():
+    # chart generation code here
+    plt.plot([1, 2, 3, 4, 5], [10, 20, 25, 30, 35])
+    plt.xlabel("X-axis")
+    plt.ylabel("Y-axis")
+    plt.title("Sample Sales Chart")
+
+    # Save figure as an image file
+    plt.savefig("sales_chart.png")
+    plt.close()  # Close the figure to release resources
+
+    click.echo("Sales chart saved as 'sales_chart.png'.")
+
+    # Display the chart in the CLI
+    plt.show()
+
+    
+# Add the new command to the CLI
+cli.add_command(display_sales_chart)
 
 customer_cli = generate_table_cli(Customer, "Customer", ["customer_name", "email", "phone_number"])
 product_cli = generate_table_cli(Product, "Product", ["product_name", "description", "price"])
