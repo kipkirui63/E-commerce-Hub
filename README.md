@@ -16,7 +16,7 @@ To be able to input commands from the command line
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/kipkirui63/wk4-CLI-project
    ```
 
 2. Navigate to the project directory.
